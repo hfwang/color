@@ -135,6 +135,7 @@ require 'color/rgb'
 require 'color/cmyk'
 require 'color/grayscale'
 require 'color/hsl'
+require 'color/hsv'
 require 'color/yiq'
 require 'color/css'
 

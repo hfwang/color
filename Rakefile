@@ -11,6 +11,14 @@ Hoe.plugin :minitest
 Hoe.plugin :travis
 Hoe.plugin :email unless ENV['CI'] or ENV['TRAVIS']
 
+task :console do
+  require 'irb'
+  require 'irb/completion'
+  require 'color' # You know what to do.
+  ARGV.clear
+  IRB.start
+end
+
 spec = Hoe.spec 'color' do
   developer('Austin Ziegler', 'halostatue@gmail.com')
   developer('Matt Lyon', 'matt@postsomnia.com')
