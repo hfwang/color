@@ -137,7 +137,7 @@ class Color::HSL
   def saturation=(ss)
     @s = Color.normalize(ss / 100.0)
   end
-  # Sets the saturation of the colour in the ragne 0.0 .. 1.0.
+  # Sets the saturation of the colour in the range 0.0 .. 1.0.
   def s=(ss)
     @s = Color.normalize(ss)
   end
